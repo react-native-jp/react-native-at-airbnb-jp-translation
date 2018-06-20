@@ -1,13 +1,3 @@
-# はじめに
-この記事は2018年6月20日にAirbnb社の[Gabriel Peal](https://medium.com/@gpeal)によって公開された記事を日本語に翻訳したものです。
-
-公開にあたっては氏本人の同意を確認中ですが、誤訳や問題のある表現等を見つけた方は僕の[Twitterアカウント](https://twitter.com/andoshin11)までDMいただけますと幸いです。
-
-元記事:
-
-[https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838:embed:cite]
-
-# 本文
 この記事はAirbnb社におけるReact Native体験と `次の時代`のモバイルアプリケーション開発について記したブログシリーズの第二弾です。
 
 React NativeはAndroid, iOS, Webで横断的に動作する、それ自体が比較的新しく急速に発展しているクロスプラットフォームフレームワークです。2年間に渡って使ってきた今、React Nativeは多くの点において革新的なツールであると自信を持って言えます。それはモバイル開発におけるパラダイムシフトであり、私たちはReact Nativeが掲げるゴールから多くの恩恵を受けることができました。しかしその利点を得るために多くの痛みが伴ったことは無視できません。
