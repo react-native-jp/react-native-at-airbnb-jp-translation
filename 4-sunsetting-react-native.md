@@ -1,13 +1,3 @@
-# はじめに
-この記事は2018年6月20日にAirbnb社の[Gabriel Peal](https://medium.com/@gpeal)によって公開された記事を日本語に翻訳したものです。
-
-公開にあたっては氏本人の同意を確認中ですが、誤訳や問題のある表現等を見つけた方は僕の[Twitterアカウント](https://twitter.com/andoshin11)までDMいただけますと幸いです。
-
-元記事:
-
-[https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a:embed:cite]
-
-# 本文
 この記事はAirbnb社におけるReact Native体験と `次の時代`のモバイルアプリケーション開発について記したブログシリーズの第四弾です。
 
 これまで多くのチームがReact Nativeを信頼して今後も利用し続ける計画を立てていましたが、結論としてReact Nativeが私たちのゴールを達成することはできませんでした。継続してReact Nativeに投資を続けるための数多くの[技術的な問題](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838)や[組織構造の問題](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)に対して、私たちは解決策を見出せなかったのです。
