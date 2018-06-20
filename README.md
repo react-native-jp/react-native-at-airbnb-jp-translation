@@ -1,0 +1,1 @@
+# react-native-at-airbnb-jp-translation
