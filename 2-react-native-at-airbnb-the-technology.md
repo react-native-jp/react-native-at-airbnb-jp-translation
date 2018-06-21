@@ -118,7 +118,7 @@ React Nativeによるアプリケーションサイズへの影響も無視で�
 [この](https://github.com/facebook/react-native/issues/2814)問題により、今の所はまだAndroidに向けて64bitのAPKを配信できていません。
 
 ### ジェスチャー
-タッチコントロールに関するサブシステムはAndroidとiOS間での違いが大きすぎることもあり、それらを統合するAPIを開発することはReact Nativeコミュニティ全体にとって大きな課題です。そのようなこともあり現在Airbnbでは、複雑なジェスチャーを要求する画面ではReact Nativeは利用していません。しかしながら[react-native-gesture-handler](https://github.com/kmagiera/react-native-gesture-handler)のv1.0が最近リリースされるなど、まだ取り組みは活発なようです。。
+タッチコントロールに関するサブシステムはAndroidとiOS間での違いが大きすぎることもあり、それらを統合するAPIを開発することはReact Nativeコミュニティ全体にとって大きな課題です。そのようなこともあり現在Airbnbでは、複雑なジェスチャーを要求する画面ではReact Nativeは利用していません。しかしながら[react-native-gesture-handler](https://github.com/kmagiera/react-native-gesture-handler)のv1.0が最近リリースされるなど、まだ取り組みは活発なようです。
 
 ### リスト表示
 [FlatList](https://facebook.github.io/react-native/docs/flatlist.html)のようなライブラリが登場したことでReact Nativeでもこの分野が発展してきているようです。ですがそれはまだAndroidの[RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)やiOSの[UICollectionView](https://developer.apple.com/documentation/uikit/uicollectionview)には到底及びません。スレッドの機構により多くの制限がなかなか解決されないでいます。Adapterの持つデータには同期的なアクセスされないため、高速にスクロールしていても非同期でViewを描画することも可能なはずです。テキストもiOSでは非同期で取得されるため、事前にCellの高さを計算することが難しいです。
