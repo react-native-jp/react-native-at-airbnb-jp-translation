@@ -54,3 +54,10 @@ NativeとReact Nativeで開発を進めているチームはしばしば技術�
 ### 公式リソースとドキュメント
 
 iOS/Androidは10年の歴史と何百万の開発者を抱えており大量の学習教材、OSS、オンラインの情報が存在します。私達はCodePathや沢山の情報をNativeエンジニアの育成の為に利用してきました。React Nativeはクロスプラットフォーム開発の一角を占めるようになりましたが、それでもAndroidやiOSのコミュニティよりは小さいです。殆どのインフラストラクチャを自前で開発しないといけなかったという事実は私達がReac tNativeの教育や育成に投資をしすぎたという事を意味しています。
+
+# その他の記事
+- [Part 1](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/1-alt-react-native-at-airbnb.md)）: React Native at Airbnb
+- [Part 2](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/2-react-native-at-airbnb-the-technology.md)）: The Technology
+- [Part 3](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)（[日本語訳](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)）: Building a Cross-Platform Mobile Team(本記事)
+- [Part 4](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/4-sunsetting-react-native.md)）: Making a Decision on React Native
+- [Part 5](https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/5-what%E2%80%99s-next-for-mobile-at-airbnb.md)）: What’s Next for Mobile

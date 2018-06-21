@@ -139,8 +139,8 @@ Androidは頻繁にバックグラウンドプロセスをリフレッシュし�
 
 
 # その他の記事
-- [Part 1](http://studio-andy.hatenablog.com/entry/react-native-at-airbnb): React Native at Airbnb
-- Part 2: The Technology(本記事)
-- [Part 3](https://hotchemi.hateblo.jp/entry/2018/06/20/234054): Building a Cross-Platform Mobile Team
-- [Part 4](http://studio-andy.hatenablog.com/entry/sunsetting-react-native): Making a Decision on React Native
-- Part 5(未完了): What’s Next for Mobile
+- [Part 1](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/1-alt-react-native-at-airbnb.md)）: React Native at Airbnb
+- [Part 2](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/2-react-native-at-airbnb-the-technology.md)）: The Technology(本記事)
+- [Part 3](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)（[日本語訳](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)）: Building a Cross-Platform Mobile Team
+- [Part 4](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/4-sunsetting-react-native.md)）: Making a Decision on React Native
+- [Part 5](https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/5-what%E2%80%99s-next-for-mobile-at-airbnb.md)）: What’s Next for Mobile
