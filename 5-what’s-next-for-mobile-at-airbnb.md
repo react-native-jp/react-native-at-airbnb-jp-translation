@@ -1,10 +1,12 @@
+# [What’s Next for Mobile at Airbnb](https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab)
+
 ### Exciting Times Ahead
 
 React Nativeに挑戦している間も、我々はNative側での努力も怠ること無く継続していました。今日ではいくつものエキサイティングな、プロダクトに導入済の(あるいはもうすぐ導入される)プロジェクトが存在しています。そのうち幾つかのプロジェクトはReact Nativeの良い部分や我々の経験を元に開発されています。
 
 #### Server-Driven Rendering
 
-React Nativeを使っていないとしても、私達はプロダクトコードを"一度だけ"書くことに価値を見出しています。私達はDLS(Airbnbに社内デザイン言語)を多用しており多くの画面においてAndroidとiOSでほぼ同じデザインを適用しています。
+React Nativeを使っていないとしても、私達はプロダクトコードを"一度だけ"書くことに価値を見出しています。私達はDLS(Airbnbの社内デザイン言語)を多用しており多くの画面においてAndroidとiOSでほぼ同じデザインを適用しています。
 
 幾つかのチームで実験を行い、パワフルなサーバドリブンのレンダリングフレームワークを統一する事を開始しました。このフレームワークにより、サーバーはデバイスに描画すべきコンポーネント、スクリーン設定、発火するアクションを記述したデータを送信し、各プラットフォームはデータを解釈しnativeの画面を描画したりDLSを用いた全体のフローを描画します。
 
@@ -20,7 +22,7 @@ React Nativeを使っていないとしても、私達はプロダクトコー�
 
 ### Epoxy Components
 
-2016年に、我々は[Epoxy][https://github.com/airbnb/epoxy]をAndroid向けにオープンソース化しました。
+2016年に、我々は[Epoxy](https://github.com/airbnb/epoxy)をAndroid向けにオープンソース化しました。
 Epoxyは多様なcellを持つRecyclerViews, UICollectionViews, UITableViewsを可能にするフレームワークで、殆どの新しい画面にはEpoxyを利用しています。Epoxyを利用する事でそれぞれのスクリーンを独立したcomponentとして定義する事が可能になり、遅延初期化も実施する事ができます。今日では私達はiOS/Androidの両方のEpoxy実装を公開しています。
 
 iOSではコードは以下の様な形となります。
@@ -49,7 +51,7 @@ basicRow {
 
 ### Epoxy Diffing
 
-Reactでは、renderメソッドはコンポーネントのリストをreturnいます。Reactのパフォーマンスの肝はそれらのコンポーネントは単に描画したいViewやHTMLのモデルとしての表現だという事です。コンポーネントのツリーはdiffが計算され必要な変更のみが実施されます。我々はEpoxyにおいて似たようなコンセプトを導入しました。EpoxyではbuildModelsメソッドの中にスクリーン全体の(を表現する)モデルを宣言します。Kotlinの優雅なDSLで表現されるその実装はReactとコンセプト的にとても似ており以下の様になります。
+Reactでは、renderメソッドはコンポーネントのリストをreturnします。Reactのパフォーマンスの肝はそれらのコンポーネントは単に描画したいViewやHTMLのモデルとしての表現できるという事です。コンポーネントのツリーはdiffが計算され必要な変更のみが実施されます。我々はEpoxyにおいて似たようなコンセプトを導入しました。EpoxyではbuildModelsメソッドの中にスクリーン全体の(を表現する)モデルを宣言します。Kotlinの優雅なDSLで表現されるその実装はReactとコンセプト的にとても似ており以下の様になります。
 
 ```kotlin
 override fun EpoxyController.buildModels() {
@@ -70,7 +72,7 @@ override fun EpoxyController.buildModels() {
 }
 ```
 
-データが変更されると、`requestModelBuild()`実装が呼び出されRecyclerViewのメソッドが最適な形で呼び出され画面が再描画されます。
+データが変更されると、`requestModelBuild()`が呼び出されRecyclerViewのメソッドが最適な形で呼び出され画面が再描画されます。
 
 iOSではコードは以下の様になります。
 
@@ -160,7 +162,7 @@ iOSでもまだβテストの段階ですが似たフレームワークを開発
 
 ### Iteration Speed
 
-React Nativeから移行してきて明らかな問題の一つが開発サイクルのスピードです。1,2秒で変更をテストできる世界から15分も待たないといけない世界へ戻ってくるのは厳しいですよね。幸運な事に、我々はこちらに関しても必要とされている支援を提供する事ができました。
+React Nativeから移行してきて明らかな問題の一つが開発サイクルのスピードです。1,2秒で変更をテストできる世界から15分も待たないといけない世界へ戻ってくるのは厳しいですよね。幸運な事に、我々はこちらに関しても殆ど必要とされている支援を提供する事ができました。
 
 私達はAndroidとiOSでアプリの一部のみをコンパイルし、特定のモジュールに依存する(launcherを含む部分的な)アプリを生成するような基盤を構築しています。
 
@@ -168,11 +170,11 @@ Androidでは、Gradleのプロダクトフレーバーを利用して実現し�
 
 ![](https://cdn-images-1.medium.com/max/1600/1*KVrbsdwESyfbtKFeh2acXg.png)
 
-この新しい依存関係の指定はエンジニアにアプリを部分的にビルドする事を可能にします。IntelliJのmodule unloadingという機能と合わせる事でMac book Pro上で劇的にビルドとIDEのパフォーマンスが改善しました。
+この新しい依存関係の指定はエンジニアにアプリを部分的にビルドする事を可能にします。IntelliJの[module unloading](https://blog.jetbrains.com/idea/2017/06/intellij-idea-2017-2-eap-introduces-unloaded-modules/)という機能と合わせる事でMac book Pro上で劇的にビルドとIDEのパフォーマンスが改善しました。
 
 私達は新しいテスト用フレーバーを生成するスクリプトを開発し数ヶ月の間に20以上のフレーバーを作成してきました。新しいフレーバーを利用した開発速度は平均2.5倍高速化し5分以上かかっていたビルド時間は15倍改善しました。
 
-参考までに、こちらが動的に(root moduleへの参照を持つ) プロダクトフレーバーを生成するスニペットです。
+参考までに、[こちら](https://gist.github.com/gpeal/d68e4fc1357ef9d126f25afd9ab4eee2)が動的に(root moduleへの参照を持つ)プロダクトフレーバーを生成するスニペットです。
 
 似たようにiOSではmoduleは以下の様になります。
 
