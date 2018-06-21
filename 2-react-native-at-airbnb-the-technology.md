@@ -75,7 +75,7 @@ React Nativeは未成熟であるため場合によってはソースコード�
 ### JavaScriptツール
 JavaScriptは動的型付けの言語です。型安全でない言語を扱うことはスケールが難しいだけでなく、型のある世界からやってきたネイティブエンジニアとの争いの元となりました。彼らは型の問題がなければよりReact Nativeの学習に興味を示してくれたでしょう。
 
-私たちは[flow](https://flow.org/)の導入を試みましたが、まるで暗号のようなエラーメッセージに開発者のフラストレーションはたまる一方でした。[TypeScript](http://www.typescriptlang.org/)も調査はしましたが、既にある[babel](https://babeljs.io/)や[metro bundler](https://github.com/facebook/metro)との統合に問題があります。そのような状況ではありますが、今後も私たちはTypeScriptの調査を継続していくつもりです。
+私たちは[flow](https://flow.org/)の導入を試みましたが、まるで暗号のようなエラーメッセージに開発者のフラストレーションはたまる一方でした。[TypeScript](http://www.typescriptlang.org/)も調査はしましたが、既にある[babel](https://babeljs.io/)や[metro bundler](https://github.com/facebook/metro)との統合に問題があります。そのような状況ではありますが、今後も私たちはweb向けにTypeScriptの調査を継続していくつもりです。
 
 ### リファクタリング
 JavaScriptという型のない言語を扱った結果、リファクタリングがとても大変な作業になり多くのエラーが吐かれることとなりました。props名の変更、特に複数のコンポーネントにまたがって継承される `onClick`のような広く使われるpropsを正確に変更する作業はまるで悪夢のようでした。更に悪いことに、そのようなリファクタはコンパイル時でなくプロダクション時にエラーになり、静的解析を適用するのも難しいものでした。
