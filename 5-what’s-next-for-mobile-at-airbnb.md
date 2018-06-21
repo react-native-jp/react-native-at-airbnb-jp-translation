@@ -185,3 +185,10 @@ Androidでは、Gradleのプロダクトフレーバーを利用して実現し�
 ### Conclusion
 
 会社にとって、新しい技術に挑戦する事を恐れず、高い品質、開発速度、開発者体験を維持する事はとても重要です。結論としては、React Nativeは機能をリリースし、モバイル開発にとって新しい考え方を私達にもたらす必要なツールでした。もしこの話を聞いてあなたも参加してみたいと思ったならば、ぜひ私達までご一報を！
+
+# その他の記事
+- [Part 1](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/1-alt-react-native-at-airbnb.md)）: React Native at Airbnb
+- [Part 2](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/2-react-native-at-airbnb-the-technology.md)）: The Technology
+- [Part 3](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)（[日本語訳](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)）: Building a Cross-Platform Mobile Team
+- [Part 4](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/4-sunsetting-react-native.md)）: Making a Decision on React Native
+- [Part 5](https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/5-what%E2%80%99s-next-for-mobile-at-airbnb.md)）: What’s Next for Mobile（本記事）

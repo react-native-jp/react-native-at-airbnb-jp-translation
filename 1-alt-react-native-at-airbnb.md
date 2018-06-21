@@ -31,10 +31,10 @@ Airbnbがサービスを開始した10年前、スマートフォンはまだ普
 
 本シリーズでは私達の体験を余す所なくお伝えし、次に何に取り組んでいるかも同時にお伝えします。
 
-Part twoでは、React Nativeで(技術的に)うまくいった所、うまくいかなかった所を振り返ります。
+[Part two](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/2-react-native-at-airbnb-the-technology.md)）では、React Nativeで(技術的に)うまくいった所、うまくいかなかった所を振り返ります。
 
-Part threeでは、クロスプラットフォームなモバイルチームを作るに当たって取り組んだ組織的な挑戦を振り返ります。
+[Part three](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)（[日本語訳](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)）では、クロスプラットフォームなモバイルチームを作るに当たって取り組んだ組織的な挑戦を振り返ります。
 
-Part fourでは、我々とReact Nativeの現在の状況に焦点を当て、AirbnbにおけるReact Nativeがどうなるであろうかをお伝えします。
+[Part four](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/4-sunsetting-react-native.md)）では、我々とReact Nativeの現在の状況に焦点を当て、AirbnbにおけるReact Nativeがどうなるであろうかをお伝えします。
 
-Part fiveでは、React Nativeから学んだ事とそれらをNative開発にどの様に役立てているかをお話します。
+[Part five](https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/5-what%E2%80%99s-next-for-mobile-at-airbnb.md)）では、React Nativeから学んだ事とそれらをNative開発にどの様に役立てているかをお話します。
