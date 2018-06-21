@@ -33,7 +33,7 @@ Airbnbがサービスを開始した10年前、スマートフォンはまだ普
 
 [Part two](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/2-react-native-at-airbnb-the-technology.md)）では、React Nativeで(技術的に)うまくいった所、うまくいかなかった所を振り返ります。
 
-[Part three](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)（[日本語訳](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)）では、クロスプラットフォームなモバイルチームを作るに当たって取り組んだ組織的な挑戦を振り返ります。
+[Part three](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/3-building-a-cross-platform-mobile-team.md)）では、クロスプラットフォームなモバイルチームを作るに当たって取り組んだ組織的な挑戦を振り返ります。
 
 [Part four](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/4-sunsetting-react-native.md)）では、我々とReact Nativeの現在の状況に焦点を当て、AirbnbにおけるReact Nativeがどうなるであろうかをお伝えします。
 
