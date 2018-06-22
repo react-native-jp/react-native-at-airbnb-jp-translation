@@ -103,7 +103,7 @@ Android向けの多くのReact Nativeライブラリではパッケージの読�
 もう一つ付け加えると、ネイティブとReact Native間でスタックトレースは別れてしまうため、双方を跨いだ問題のデバッグはとても大変なものになるでしょう。
 
 ### ネイティブブリッジ
-React Nativeにはネイティブと通信するための[bridge API](https://facebook.github.io/react-native/docs/communication-ios.html)があります。このAPIは期待どうりの動作をしてくれるものの、実装するのがものすごく面倒です。まず初めに3つのプラットフォーム向けのそれぞれの開発環境を適切に設定する必要があります。JavaScriptから返ってくるデータ型が予測不可能という問題もあります。例えばinteger型はしばしばstring型にラップされてしまい、bridgeを通ってみるまでどうなるのか分かりません。またAndroidではクラッシュするのにiOSではフィードバックもなく落ちることがあります。私たちは2017年の終わりにかけてTypeScriptの型定義ファイルからbridgeコードを自動生成する方法に取り組みましたが、それはかけるコストも少なすぎ、タイミングも遅すぎました。
+React Nativeにはネイティブと通信するための[bridge API](https://facebook.github.io/react-native/docs/communication-ios.html)があります。このAPIは期待通りの動作をしてくれるものの、実装するのがものすごく面倒です。まず初めに3つのプラットフォーム向けのそれぞれの開発環境を適切に設定する必要があります。JavaScriptから返ってくるデータ型が予測不可能という問題もあります。例えばinteger型はしばしばstring型にラップされてしまい、bridgeを通ってみるまでどうなるのか分かりません。またAndroidではクラッシュするのにiOSではフィードバックもなく落ちることがあります。私たちは2017年の終わりにかけてTypeScriptの型定義ファイルからbridgeコードを自動生成する方法に取り組みましたが、それはかけるコストも少なすぎ、タイミングも遅すぎました。
 
 ### 初期化の時間
 React Nativeがファーストビューを描画するには、まずその前にランタイムを初期化する必要があります。残念ながら私たちほどの規模になると、たとえそれがハイエンドデバイスであっても数秒かかってしまいます。このような問題があるなかでReact Nativeをアプリの起動画面に採用することはほぼ不可能です。私たちはアプリの起動時にReact Nativeの初期化を行うことでファーストビューの描画にかかる時間を最小化しました。
@@ -121,12 +121,12 @@ React Nativeによるアプリケーションサイズへの影響も無視で�
 タッチコントロールに関するサブシステムはAndroidとiOS間での違いが大きすぎることもあり、それらを統合するAPIを開発することはReact Nativeコミュニティ全体にとって大きな課題です。そのようなこともあり現在Airbnbでは、複雑なジェスチャーを要求する画面ではReact Nativeは利用していません。しかしながら[react-native-gesture-handler](https://github.com/kmagiera/react-native-gesture-handler)のv1.0が最近リリースされるなど、まだ取り組みは活発なようです。
 
 ### リスト表示
-[FlatList](https://facebook.github.io/react-native/docs/flatlist.html)のようなライブラリが登場したことでReact Nativeでもこの分野が発展してきているようです。ですがそれはまだAndroidの[RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)やiOSの[UICollectionView](https://developer.apple.com/documentation/uikit/uicollectionview)には到底及びません。スレッドの機構により多くの制限がなかなか解決されないでいます。Adapterのデータは同期的にアクセスできないので、素早くスクロールするとそれらが非同期的にレンダリングされて画面がちらつく可能性があります。テキストもiOSでは非同期でmeasureされるため、事前にCellの高さを計算することが難しいです。
+[FlatList](https://facebook.github.io/react-native/docs/flatlist.html)のようなライブラリが登場したことでReact Nativeでもこの分野が発展してきているようです。ですがそれはまだAndroidの[RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)やiOSの[UICollectionView](https://developer.apple.com/documentation/uikit/uicollectionview)には到底及びません。スレッドの機構により多くの制限がなかなか解決されないでいます。Adapterのデータには同期的にアクセスできないので、素早くスクロールするとそれらが非同期的にレンダリングされて画面がちらつく可能性があります。テキストもiOSでは非同期で計測されるため、事前にCellの高さを計算することが難しいです。
 
 (* 訳注: あまり意味が理解できておらず申し訳ないです。)
 
 ### React Nativeのアップグレード
-React Nativeにおけるほとんどのアップグレード作業は難しくありませんが、とても大変なケースがいくつかありました。具体的な例を挙げるとReact Native 0.43(2017年4月リリース)からReact Native 0.49(2017年10月リリース)へのアップグレード作業では、前者がReact 16のα版、後者がβ版を利用していた関係でほぼ不可能とも思える作業になりました。多くのReactライブラリがWebを想定して設計されているため、最新版のReactへの対応がなされておらず手こずることとなりました。2017年中頃のインフラチームはこの依存解決の問題に追われ、結果的に大くのコストが費やされたこととなります。
+React Nativeにおけるほとんどのアップグレード作業は難しくありませんが、とても大変なケースがいくつかありました。具体的な例を挙げるとReact Native 0.43(2017年4月リリース)からReact Native 0.49(2017年10月リリース)へのアップグレード作業では、前者がReact 16のα版、後者がβ版を利用していた関係でほぼ不可能とも思える作業になりました。多くのReactライブラリがWebを想定して設計されているため、最新版のReactへの対応がなされておらず手こずることとなりました。2017年中頃のインフラチームはこの依存解決の問題に追われ、結果的に多くのコストが費やされたこととなります。
 
 ### アクセシビリティ
 2017年に私たちはアクセシビリティに関する[大幅な改修](https://airbnb.design/designing-for-access/)を行い、ハンディキャップを抱えた人たちが最適なリスティングを見つけ、予約できるように努力しました。しかしながらReact NativeのアクセシビリティAPIにはいくつもの穴があります。最低限のアクセシビリティ要件を満たすためだけでも、私たちは[Forkした](https://github.com/airbnb/react-native/commits/0.46-canary)React Nativeをメンテナンスして修正をマージする必要がありました。AndroidやiOSならば1行加えるだけですむような修正でも、React Nativeでの実装方法を考え、変更を加え、React Native Coreに修正を出してケアするのには膨大な時間がかかりました。
