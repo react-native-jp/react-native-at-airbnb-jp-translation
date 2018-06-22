@@ -53,7 +53,7 @@ NativeとReact Nativeで開発を進めているチームはしばしば技術�
 
 ### 公式リソースとドキュメント
 
-iOS/Androidは10年の歴史と何百万の開発者を抱えており大量の学習教材、OSS、オンラインの情報が存在します。私達はCodePathや沢山の情報をNativeエンジニアの育成の為に利用してきました。React Nativeはクロスプラットフォーム開発の一角を占めるようになりましたが、それでもAndroidやiOSのコミュニティよりは小さいです。殆どのインフラストラクチャを自前で開発しないといけなかったという事実は私達がReac tNativeの教育や育成に投資をしすぎたという事を意味しています。
+iOS/Androidは10年の歴史と何百万の開発者を抱えており大量の学習教材、OSS、オンラインの情報が存在します。私達はCodePathや沢山の情報をNativeエンジニアの育成の為に利用してきました。React Nativeはクロスプラットフォーム開発の一角を占めるようになりましたが、それでもAndroidやiOSのコミュニティよりは小さいです。殆どのインフラストラクチャを自前で開発しないといけなかったという事実は私達がReact Nativeの教育や育成に投資をしすぎたという事を意味しています。
 
 # その他の記事
 - [Part 1](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)（[日本語訳](https://github.com/react-native-jp/react-native-at-airbnb-jp-translation/blob/master/1-alt-react-native-at-airbnb.md)）: React Native at Airbnb
