@@ -18,7 +18,7 @@ Reactが[最も愛される](https://insights.stackoverflow.com/survey/2018/#tec
 
 - *Components:* 適切に定義されたpropsとstateによってReact Componentは開発における関心の分離を実現します。これはReactのスケーラビリティにおける大きな要因です。
 - *簡潔なライフサイクル:* Androidと(多少はマシですが)iOSのライフサイクルは非常に複雑なことで知られています。適切に動作するリアクティブなReact Componentはこの問題を根本的に解決するため、React Nativeの学習をAndroidやiOSのそれと比べて非常に容易にしています。
-- *宣言的:* Declarative(宣言的)であるというReactの特徴は、内部のStateとUIの整合性を保つ上でとても役に立ちます。
+- *宣言的:* Declarative(宣言的)であるというReactの特徴は、内部のstateとUIの整合性を保つ上でとても役に立ちます。
 
 ### 検証スピード
 React Nativeを利用することでアプリケーションの変更を即座に確認できる[hot reloading](https://facebook.github.io/react-native/blog/2016/03/24/introducing-hot-reloading.html)を活用することができます。ビルドパフォーマンスはわたしたちのネイティブアプリでの最優先課題でしたが、React Nativeで達成したイテレーションスピードに近付くことすらできませんでした。ネイティブのビルドは最速で15秒でしたが、フルビルドで20分かかることもありました。
@@ -36,7 +36,7 @@ React Nativeにまつわる最も大きな心配事の一つがパフォーマ�
 しかしながら初期化処理と最初の描画時間に関するパフォーマンスは低くReact Nativeで作った起動画面やディープリンク、画面回遊時のTTIなどに大きな影響を与えました。それに加えて[Yoga](https://github.com/facebook/yoga)がReact Native coponentをネイティブのviewに変換するため、スクリーンフレームの低下時にデバッグするのが難しいという問題もありました。
 
 ### Redux
-StateとUIの整合性を保ちやすい、画面をまたいだデータの共有が簡単に行える等の有用性から私たちはReduxを採用しました。ですがReduxは悪名高いboilerplateで知られ、学習の難易度も高いです。一般的なテンプレートを生成するジェネレータも用意しましたが、ReduxはReact Nativeで開発する上で最も難しい部分であり混乱を招きやすい部分であることに変わりはありませんでした。React Nativeに限った問題ではありませんが。
+stateとUIの整合性を保ちやすい、画面をまたいだデータの共有が簡単に行える等の有用性から私たちはReduxを採用しました。ですがReduxは悪名高いboilerplateで知られ、学習の難易度も高いです。一般的なテンプレートを生成するジェネレータも用意しましたが、ReduxはReact Nativeで開発する上で最も難しい部分であり混乱を招きやすい部分であることに変わりはありませんでした。React Nativeに限った問題ではありませんが。
 
 ### ネイティブの支え
 React Nativeの中で起きる全てのことはネイティブのコードにBridgeできるため、開発を始めた時点では実現可能か確信の持てなかった多くのものを最終的に実現することができました。
