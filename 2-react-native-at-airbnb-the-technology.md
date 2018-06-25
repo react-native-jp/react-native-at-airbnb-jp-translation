@@ -47,7 +47,7 @@ React Nativeの中で起きる全てのことはネイティブのコードにBr
 4. *その他のコアインフラ:* Networkingだけでなく、'i18n'や'experimentation'のようなその他のネイティブインフラもラップすることでReact Nativeからシームレスに利用できます。
 
 ### 静的解析
-AirbnbはWebでの[eslintの利用](https://github.com/airbnb/javascript)について確固とした実績を持っていますが、[prettier](https://github.com/prettier/prettier])を導入したのは私たちのプラットフォームが社内では初めてでした。prettierはPull Requestにおける細かな指摘やミスを軽減するのにとても有効で、Webインフラチームでは活発に試されています。
+AirbnbはWebでの[eslintの利用](https://github.com/airbnb/javascript)について確固とした実績を持っていますが、[prettier](https://github.com/prettier/prettier)を導入したのは私たちのプラットフォームが社内では初めてでした。prettierはPull Requestにおける細かな指摘やミスを軽減するのにとても有効で、Webインフラチームでは活発に試されています。
 
 また描画にかかる時間とコストを解析することで、改修の優先度が高い画面を調べています。
 
